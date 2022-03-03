@@ -4,6 +4,7 @@ from bot.models import *
 from .callback_query import *
 from .keyboard import *
 
+
 def start(update, context):
     user = update.message.from_user
     chat_id = update.message.chat_id
@@ -11,6 +12,7 @@ def start(update, context):
     update.message.reply_html('Assalomu alaykum <b>{}!</b>\nSiz bilan <b>Sulton Abirqulov</b>\n \n'
     '<b>Ramazon oyi muborak bo\'lsin</b>\n \nKerakli bo\'limni tanlang! 👇👇👇'.
         format(user.first_name), reply_markup=start_buttons())
+
 
 
 def facultetlar(update):
